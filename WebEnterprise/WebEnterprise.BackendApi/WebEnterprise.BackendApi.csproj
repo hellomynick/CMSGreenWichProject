@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>635a1720-9360-4bda-acb0-e3cbcad1d030</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebEnterprise.Application\WebEnterprise.Application.csproj" />
+    <ProjectReference Include="..\WebEnterprise.Data\WebEnterprise.Data.csproj" />
+    <ProjectReference Include="..\WebEnterprise.Models\WebEnterprise.ViewModels.csproj" />
+    <ProjectReference Include="..\WebEnterprise.Untilities\WebEnterprise.Untilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\user-document\" />
+  </ItemGroup>
+
+</Project>

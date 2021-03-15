@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebEnterprise.Data\WebEnterprise.Data.csproj" />
+    <ProjectReference Include="..\WebEnterprise.Models\WebEnterprise.ViewModels.csproj" />
+    <ProjectReference Include="..\WebEnterprise.Untilities\WebEnterprise.Untilities.csproj" />
+  </ItemGroup>
+
+</Project>
